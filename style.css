@@ -41,6 +41,11 @@ p {
   justify-content: center;
 }
 
+.app-names,
+.app-paragraphs {
+  text-align: left;
+}
+
 .navigation-links a,
 .app-links a {
   margin: 20px;
@@ -82,4 +87,43 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .homepage {
+    max-width: 70%;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .app-names {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .app-paragraphs {
+    padding: 0px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .app-links {
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+
+  .app-links a {
+    display: block;
+  }
+
+  .secondary-image {
+    display: block;
+    width: 35vh;
+  }
 }
